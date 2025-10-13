@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://flightmanagement-33kh.onrender.com";
+const API_URL = "https://flightmanagement-33kh.onrender.com/api";
 
 const api = axios.create({
   baseURL: API_URL,
