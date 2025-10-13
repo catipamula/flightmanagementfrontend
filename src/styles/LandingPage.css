@@ -1,0 +1,168 @@
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+  color: #1f2937;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------------- Hero Section ---------------- */
+.hero-section {
+  position: relative;
+  height: 950px;
+  background-color: #a4b3e3;
+  background-image: url('https://images.pexels.com/photos/91217/pexels-photo-91217.jpeg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-overlay {
+    display: none;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  max-width: 700px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* ---------------- Search Input ---------------- */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 16px 24px;
+  border-radius: 50px;
+  border: 1px solid #e0e7ff;
+  font-size: 16px;
+  outline: none;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  box-shadow: 0 12px 35px rgba(66, 153, 225, 0.4);
+}
+
+/* ---------------- Flights Section ---------------- */
+.flights-section {
+  padding: 40px 20px 60px 20px; /* Added horizontal padding to constrain content */
+  background-color: #f8fafc;
+  /* Use max-width and margin: auto to center the whole section content */
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #1e40af;
+}
+
+/* Flight Cards Grid */
+.flights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Flight Card */
+.flight-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flight-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.flight-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1e40af;
+}
+
+.flight-card p {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+/* No Flights Text */
+.no-flights {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-top: 30px;
+}
+
+/* ---------------- Footer ---------------- */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1e3a8a;
+  color: #e0e7ff;
+  font-size: 0.85rem;
+  width: 100%; /* Ensure full width */
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 300px;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .search-input {
+    padding: 12px 20px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
