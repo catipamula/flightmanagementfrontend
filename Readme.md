@@ -65,7 +65,6 @@ npm start
 ![Home Page Screenshot](screenshot/Home3.png)
 ![Home Page Screenshot](screenshot/Home4.png)
 ![Home Page Screenshot](screenshot/Home5.png)
-![Home Page Screenshot](screenshot/Home6.png)
 
 ## Login Preview
 ![Login Page Screenshot](screenshot/login.png)
